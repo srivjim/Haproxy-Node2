@@ -1,52 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi Página Web</title>
+    <meta charset="UTF-8">
+    <title>Página Web 4</title>
     <style>
         body {
-            background-color: #f2f2f2;
+            background-color: #f6d5e2;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 100px;
         }
 
         h1 {
-            color: #333;
-            text-align: center;
+            color: #333333;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #333333;
+            font-size: 24px;
+            margin-top: 10px;
         }
 
         p {
-            color: #666;
+            color: #666666;
+            font-size: 18px;
             line-height: 1.5;
+            margin-bottom: 20px;
         }
 
         .btn {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: #fff;
+            padding: 15px 30px;
+            background-color: #FF69B4;
+            color: #ffffff;
+            font-size: 20px;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 5px;
             transition: background-color 0.3s;
+            position: relative;
+            overflow: hidden;
         }
 
         .btn:hover {
-            background-color: #45a049;
+            background-color: #FF1493;
+        }
+
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background-color: rgba(255, 255, 255, 0.5);
+            transform: rotate(-45deg);
+            transition: transform 0.6s ease;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .btn:hover::before {
+            transform: translateX(100%) translateY(100%) rotate(-45deg);
+        }
+
+        .portada {
+            background: linear-gradient(to bottom right, #ffb8d1, #ff89a3);
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .portada h1 {
+            color: #333333;
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 0;
+        }
+        
+        .elefante {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
+    <div class="portada">
+        <h1 style="color: #ffffff;">Página Web 4</h1>
+    </div>
     <div class="container">
-        <h1>Bienvenido a Mi Página Web</h1>
-        <p>¡Esta es una página de ejemplo con un diseño guapo!</p>
-        <p>¡Disfruta explorando!</p>
+        <h2>Nodo 2</h2>
+        <h1>Aquí ahora mismo estamos observando la Página Web 4 en el Nodo 2</h1>
+        <p>Un elefante se balanceaba</p>
         <a href="#" class="btn">Botón de Acción</a>
     </div>
 </body>
 </html>
+
