@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Mi Página Web</title>
+    <title>Página Web 3</title>
     <style>
         body {
             background-color: #eef2f5;
@@ -69,14 +69,41 @@
         .btn:hover::before {
             transform: translateX(100%) translateY(100%) rotate(-45deg);
         }
+
+        .portada {
+            background-image: url('/root/Desktop/Proyecto/nginx/web1/imagen.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .portada h1 {
+            color: #ffffff;
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 0;
+        }
+
+        .elefante {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
+    <div class="portada">
+        <h1>Página Web 3</h1>
+    </div>
     <div class="container">
-        <h1>Bienvenido a Mi Página Web</h1>
-        <p>¡Esta es una página de ejemplo con un diseño cautivador!</p>
-        <p>¡Disfruta explorando!</p>
+        <h1>Aquí ahora mismo estamos observando la Página Web 3 en el Nodo 2</h1>
+        <p>Un elefante se balanceaba</p>
         <a href="#" class="btn">Botón de Acción</a>
+        <p class="elefante">Un elefante se balanceaba sobre la tela de una araña...</p>
     </div>
 </body>
 </html>
