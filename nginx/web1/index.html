@@ -44,10 +44,30 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
+            position: relative;
+            overflow: hidden;
         }
 
         .btn:hover {
             background-color: #45a049;
+        }
+
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background-color: rgba(255, 255, 255, 0.5);
+            transform: rotate(-45deg);
+            transition: transform 0.6s ease;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .btn:hover::before {
+            transform: translateX(100%) translateY(100%) rotate(-45deg);
         }
     </style>
 </head>
