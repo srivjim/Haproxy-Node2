@@ -69,31 +69,14 @@
         .btn:hover::before {
             transform: translateX(100%) translateY(100%) rotate(-45deg);
         }
-
-        .hidden {
-            display: none;
-        }
-
-        .photo {
-            display: block;
-            max-width: 300px;
-            margin: 0 auto;
-        }
     </style>
-    <script>
-        function showPhoto() {
-            var photo = document.getElementById("photo");
-            photo.classList.remove("hidden");
-        }
-    </script>
 </head>
 <body>
     <div class="container">
         <h1>Bienvenido a Mi Página Web</h1>
         <p>¡Esta es una página de ejemplo con un diseño cautivador!</p>
         <p>¡Disfruta explorando!</p>
-        <a href="#" class="btn" onclick="showPhoto()">Botón de Acción</a>
-        <img id="photo" class="hidden" src="imagen.jpg" alt="Foto" />
+        <a href="#" class="btn">Botón de Acción</a>
     </div>
 </body>
 </html>
